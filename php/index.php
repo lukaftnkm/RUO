@@ -1,12 +1,7 @@
 
 <?php
 
-// $host = 'db';
-// $user = 'devuser';
-// $password = 'devpass';
-// $db = 'test_db';
-
-// $conn = new mysqli($host, $user, $password, $db);
+// $conn = new mysqli('db', 'devuser', 'devpass', 'test_db');
 
 // if($conn->connect_error) {
 //     echo 'conection failed' . $conn->connect_error;
@@ -68,13 +63,13 @@ form  p{
                   <div data-mdb-input-init class="form-outline mb-4">
                     <input type="email" id="loginUsername" class="form-control"
                       placeholder="Username" />
-                    <label class="form-label" for="loginUsername">Username</label>
+                    <label class="form-label" for="loginUsername"></label>
                   </div>
 
                   <div data-mdb-input-init class="form-outline mb-4">
                     <input type="password" id="loginPassword" class="form-control" 
                     placeholder="Password" />
-                    <label class="form-label" for="loginPassword">Password</label>
+                    <label class="form-label" for="loginPassword"></label>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
