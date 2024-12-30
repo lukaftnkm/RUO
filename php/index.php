@@ -1,20 +1,3 @@
-
-<?php
-
-// $host = 'db';
-// $user = 'devuser';
-// $password = 'devpass';
-// $db = 'test_db';
-
-// $conn = new mysqli($host, $user, $password, $db);
-
-// if($conn->connect_error) {
-//     echo 'conection failed' . $conn->connect_error;
-// }
-// echo 'Succesfully connected to MYSQL';
-
-?> 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,57 +45,9 @@ form  p{
                   <h4 class="mt-1 mb-5 pb-1">Klinika</h4>
                 </div>
 
-                <form id="loginForm">
-                  <p>Logujte se kao pacijent</p>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="loginUsername" class="form-control"
-                      placeholder="Username" />
-                    <label class="form-label" for="loginUsername">Username</label>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="loginPassword" class="form-control" 
-                    placeholder="Password" />
-                    <label class="form-label" for="loginPassword">Password</label>
-                  </div>
-
-                  <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Nemas nalog!</p>
-                    <button id="showRegister" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-danger">Registruj se!</button>
-                  </div>
-
-                  <div class="d-flex align-items-center justify-content-center pb-4">
+                <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">Loguj se kao <a href="/admin_login.php">admin</a></p>
                   </div>
-                </form>
-
-                <form id="registerForm" style="display: none;">
-                  <p>Registrujte se kao pacijent</p>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="text" id="registerUsername" class="form-control"
-                      placeholder="Username" />
-                    <label class="form-label" for="registerUsername"></label>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="registerEmail" class="form-control"
-                      placeholder="Email" />
-                    <label class="form-label" for="registerEmail"></label>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="registerPassword" class="form-control" 
-                    placeholder="Password" />
-                    <label class="form-label" for="registerPassword"></label>
-                  </div>
-
-                  <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Vec imate nalog?</p>
-                    <button id="showLogin" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary">Loguj se!</button>
-                  </div>
-                </form>
 
               </div>
             </div>
