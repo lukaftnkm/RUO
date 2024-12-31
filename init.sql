@@ -7,17 +7,24 @@ CREATE TABLE doktori (
     specijalizacija VARCHAR(255),
     datum_rodjenja DATE
 );
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 340ce3f8957433a8f52444d4d2d3b796cd4d23e6
 INSERT INTO doktori (ime, prezime, email, password, specijalizacija, datum_rodjenja) 
 VALUES
 ('Luka', 'Djelosevic', 'luka.djelosevic@gmail.com', 'fakultet', 'Kardiologija', '2002-06-16'),
 ('Dusan', 'Kasalovic', 'dusan.kasalovic@gmail.com', 'fakultet', 'Pediatrija', '2002-08-18'),
 ('Marko', 'Radivojevic', 'marko.radivojevic@gmail.com', 'fakultet', 'Hirurgija', '2003-01-14');
-<<<<<<< HEAD
 
-=======
->>>>>>> 340ce3f8957433a8f52444d4d2d3b796cd4d23e6
+
+-- tabela pacijenata
+
+
+CREATE TABLE pacijenti (
+    id INT PRIMARY KEY UNIQUE,
+    jmbg VARCHAR(13) UNIQUE NOT NULL,
+    lbo VARCHAR(8) UNIQUE NOT NULL,
+    ime VARCHAR(50) NOT NULL,
+    prezime VARCHAR(50) NOT NULL,
+    datum_rodjenja DATE NOT NULL,
+    -- pol ENUM('M', 'Ž') NOT NULL,
+    telefon VARCHAR(15) UNIQUE NOT NULL CHECK (telefon LIKE '+381%')
+);

@@ -46,7 +46,7 @@ form  p{
                 </div>
 
                 <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Loguj se kao <a href="/admin_login.php">admin</a></p>
+                    <p class="mb-0 me-2">Loguj se kao <a href="/admin_login.php">doktor</a></p>
                   </div>
 
               </div>
